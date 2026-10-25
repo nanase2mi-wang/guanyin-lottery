@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "觀音靈籤",
+  "version": "1.1",
+  "description": "觀音靈籤一百首隨機抽選，顯示農曆干支日期。",
+  "permissions": ["sidePanel", "clipboardWrite"],
+  "action": {
+    "default_title": "觀音靈籤"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

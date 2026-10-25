@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #ffffff;
+      color: #000000;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    body {
+      padding: 16px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    #dateBox {
+      font-size: 13px;
+      line-height: 1.6;
+      color: #333333;
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 10px;
+    }
+    #headerBox {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.8;
+      text-align: center;
+    }
+    #resultBox {
+      flex: 1;
+      font-size: 15px;
+      line-height: 1.9;
+      white-space: pre-wrap;
+      overflow-y: auto;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      padding: 14px;
+      background: #fafafa;
+      min-height: 180px;
+    }
+    .toolbar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    button {
+      padding: 10px 16px;
+      font-size: 15px;
+      cursor: pointer;
+      border: 1px solid #000000;
+      background: #ffffff;
+      color: #000000;
+      border-radius: 6px;
+    }
+    button:hover {
+      background: #f0f0f0;
+    }
+    button:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+    #status {
+      font-size: 13px;
+      color: #666666;
+      min-height: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div id="dateBox"></div>
+  <div id="headerBox">
+    觀音靈籤 心誠則靈<br>
+    請默念觀世音菩薩摩訶薩
+  </div>
+
+  <div id="resultBox">點擊下方「求籤」開始。</div>
+
+  <div class="toolbar">
+    <button id="btnDraw">求籤</button>
+    <button id="btnClear">清除內容</button>
+    <button id="btnCopy">複製內容</button>
+  </div>
+  <div id="status"></div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
